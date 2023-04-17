@@ -101,6 +101,8 @@ const DashboardContent = () => {
     setOpen(!open);
   };
   const { t, i18n } = useTranslation();
+  const [fa, setFa] = React.useState(false);
+
   return (
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: "flex" }}>
@@ -134,7 +136,15 @@ const DashboardContent = () => {
             </Typography>
             <IconButton
               color="inherit"
-              onClick={() => i18n.changeLanguage("fa")}
+              onClick={() => {
+                if (fa) {
+                  i18n.changeLanguage("en");
+                  setFa(false);
+                } else {
+                  i18n.changeLanguage("fa");
+                  setFa(true);
+                }
+              }}
             >
               <Translate />
             </IconButton>{" "}

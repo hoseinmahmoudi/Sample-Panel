@@ -12,6 +12,8 @@ i18n.use(initReactI18next).init({
         welcome: "Welcome to React",
         websiteName: "panel",
         RecentDeposits: "Recent Deposits",
+        Today: "Today",
+        Sales: "Sales",
       },
     },
     fa: {
@@ -19,6 +21,8 @@ i18n.use(initReactI18next).init({
         welcome: "خوش آمدید",
         websiteName: "داشبورد",
         RecentDeposits: "سپرده های اخیر",
+        Today: "امروز",
+        Sales: "فروش",
       },
     },
   },
