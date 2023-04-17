@@ -1,16 +1,19 @@
-import * as React from 'react';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import Title from './Title';
+import * as React from "react";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
+import Title from "./Title";
+import { useTranslation } from "react-i18next";
 
 function preventDefault(event: React.MouseEvent) {
   event.preventDefault();
 }
 
 export default function Deposits() {
+  const { t, i18n } = useTranslation();
+
   return (
     <React.Fragment>
-      <Title>Recent Deposits</Title>
+      <Title> {t("RecentDeposits")}</Title>
       <Typography component="p" variant="h4">
         $3,024.00
       </Typography>
