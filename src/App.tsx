@@ -1,12 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Dashboard from './pages/dashboard/Dashboard';
+import React from "react";
+import "./App.css";
+import NestedRouteWrapper from "./routes/NestedRouteWrapper";
 
 function App() {
-  return (
-    <Dashboard/>
-  );
+  return <NestedRouteWrapper />;
 }
 
 export default App;
