@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.app_rtl {
+  > .css-k008qs {
+    > * {
+      direction: rtl;
+    }
+    flex-direction: row-reverse;
+    > .css-n7rtur-MuiPaper-root-MuiAppBar-root {
+      margin-left: 0;
+      margin-right: 240px;
+    }
+    .css-dhvns5-MuiButtonBase-root-MuiIconButton-root {
+      margin-right: -12px;
+
+      margin-left: 36px;
+    }
+  }
+}
